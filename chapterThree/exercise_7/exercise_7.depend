@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1689702420 source:/home/carlos/Desktop/coding/c++/principlesPracticeC++/chapterThree/exercise_7/main.cpp
+	"std_lib_facilities.h"
+
+1688829983 /home/carlos/Desktop/coding/c++/principlesPracticeC++/chapterThree/exercise_7/std_lib_facilities.h
+	<iostream>
+	<iomanip>
+	<fstream>
+	<sstream>
+	<cmath>
+	<cstdlib>
+	<string>
+	<list>
+	<forward_list>
+	<vector>
+	<unordered_map>
+	<algorithm>
+	<array>
+	<regex>
+	<random>
+	<stdexcept>
+
