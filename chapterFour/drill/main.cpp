@@ -1,18 +1,19 @@
-// Done by Carlos Amaral (2023/08/15)
+// Done by Carlos Amaral (2023/08/20)
 
 #include "std_lib_facilities.h"
 
 int main()
 {
+
     // Variable declaration
     double num1 = 0;
     double num2 = 0;
-    double stopNumber = 0;
+    char stopChar = ' ';
 
     // User input
     cout << "Please, input two numbers '|' to exit the program \n";
 
-    while(cin >> num1 >> num2 && stopNumber != '|') {
+    while(cin >> num1 >> num2 && stopChar != '|') {
         cout << num1 << "\n";
         cout << num2 << "\n";
 
@@ -31,7 +32,4 @@ int main()
         }
 
     }
-
-
-
 }
