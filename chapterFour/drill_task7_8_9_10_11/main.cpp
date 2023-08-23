@@ -9,7 +9,7 @@ double into_meters(double num, string unit) {
     constexpr double cm_to_m = 0.01;
     constexpr double in_to_m = 0.0254;
     constexpr double ft_to_m = 0.3048;
-    double meters = 0;
+    double meters;
 
     // Logic
     if(unit == "cm") {
@@ -19,7 +19,7 @@ double into_meters(double num, string unit) {
     } else if(unit == "ft") {
         meters = num * ft_to_m;
     } else if(unit == "m") {
-        meters = meters;
+        meters = num;
     }
     return meters;
 }
@@ -50,6 +50,8 @@ int main()
     auto largest = numeric_limits<decltype(num)>::min();
     string unit;
     double meters;
+    double sum_meters = 0;
+    double no_of_values = 0;
 
     // User input (and loop through it)
     cout << "Please, introduce some numbers ( | to exit)" << endl;
@@ -69,7 +71,14 @@ int main()
                 largest = meters;
                 cout << "The largest so far is: " << largest << endl;
             }
+            sum_meters += meters;
+            no_of_values += 1;
         }
     }
+    cout << "The smallest measurement is: " << smallest << "m" << endl;
+    cout << "The largest measurement is: " << largest << "m" << endl;
+    cout << "The sum of entered values is: " << sum_meters << "m" << endl;
+    cout << "The number of entered values is: " << no_of_values << endl;
+
     cout << "Leaving the program!" << endl;
 }
