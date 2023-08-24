@@ -53,6 +53,8 @@ int main()
     double sum_meters = 0;
     double no_of_values = 0;
 
+    vector<double> measurements;
+
     // User input (and loop through it)
     cout << "Please, introduce some numbers ( | to exit)" << endl;
 
@@ -73,8 +75,16 @@ int main()
             }
             sum_meters += meters;
             no_of_values += 1;
+            measurements.push_back(meters);
         }
     }
+
+    sort(measurements);
+
+    for(double m : measurements) {
+        cout << m << endl;
+    }
+
     cout << "The smallest measurement is: " << smallest << "m" << endl;
     cout << "The largest measurement is: " << largest << "m" << endl;
     cout << "The sum of entered values is: " << sum_meters << "m" << endl;
